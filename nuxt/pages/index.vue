@@ -1,11 +1,6 @@
 <template>
   <div>
-    <h1>Hi</h1>
-    <div v-if="data">
-      <pre>
-        {{ JSON.stringify(data, null, 2)}}
-      </pre>
-    </div>
+    <componentMapper v-for="component in data[0].components" :data="component" :key="component._key" />
   </div>
 </template>
 

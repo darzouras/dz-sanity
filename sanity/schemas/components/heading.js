@@ -26,7 +26,7 @@ export default {
       validation: Rule => Rule.required()
     },
     {
-      name: 'style',
+      name: 'styleOption',
       type: 'string',
       title: 'Style',
       initialValue: 'headline',
