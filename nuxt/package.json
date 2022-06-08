@@ -10,6 +10,8 @@
     "nuxt": "3.0.0-rc.3"
   },
   "dependencies": {
-    "@nuxtjs/sanity": "^1.2.2"
+    "@nuxtjs/sanity": "^1.2.2",
+    "sass": "^1.52.2",
+    "sass-loader": "^13.0.0"
   }
 }

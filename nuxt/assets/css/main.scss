@@ -1,0 +1,108 @@
+@import "_variables.scss";
+
+:root {
+  font-size: 62.5%;
+}
+* {
+  box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $fonts;
+  background: $white;
+  color: $black;
+  font-size: 1.6rem;
+
+  /* link styling */
+  a {
+      color: $tan;
+      text-decoration: underline;
+      text-decoration-color: $pink;
+      text-decoration-thickness: 3px;
+
+      &:hover,
+      &:focus-visible {
+          background: $lime;
+      }
+  }
+
+  /* titles */
+  h1,
+  .title {
+      font-size: 3.6rem;
+      letter-spacing: 0em;
+      @include font-weight(bold);
+      word-wrap: break-word;
+      margin-bottom: 1.6rem;
+      color: $tan;
+      line-height: .8em;
+  }
+
+  h2,
+  .section-title {
+      font-size: 2.4rem;
+      letter-spacing: 0.1em;
+      @include font-weight(bold);
+      background: $tan;
+      color: $white;
+      padding: 5px;
+      width: 100%;
+      margin-bottom: 1.6rem;
+      line-height: .8em;
+  }
+
+  h3,
+  .subtitle {
+      font-size: 2.4rem;
+      letter-spacing: 0.05em;
+      @include font-weight(650);
+      word-wrap: break-word;
+      line-height: .8em;
+      margin-bottom: 1.6rem;
+      background: transparent;
+      padding: 0;
+      color: unset;
+  }
+
+  /* text */
+  p {
+      margin: 0 auto 1.6rem;
+      line-height: 1.1em;
+  }
+
+  ul {
+      margin-top: 0;
+      margin-bottom: 1.6rem;
+      li {
+          margin-bottom: .8rem;
+      }
+  }
+
+  img {
+      max-width: 100%;
+      height: auto;
+  }
+
+  .content-top {
+      margin-bottom: 2.4rem;
+  }
+  
+  pre {
+      font-family: $fonts;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      background: $seafoam;
+      color: $black;
+      padding: 1.6rem;
+      font-size:.85em;
+  }
+  code {
+      font-family: $fonts;
+      letter-spacing: 0.05em;
+  }
+}

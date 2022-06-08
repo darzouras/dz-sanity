@@ -1,0 +1,72 @@
+/* Old colors */
+$lightest: #e8eddf;
+$light: #44355b;
+$midtone: #31263e;
+$darkest: #221e22;
+$light-green: #44ddae;
+$midtone-green: #1fc19e;
+$darkest-green: #0b987c;
+
+/* New colors */
+$pink: #ee5dae;
+$seafoam: #b9e2cf;
+$lime: #deee67;
+$orange: #f1c03d;
+$tan: #bd7b6b;
+$white: #e8eddf;
+$black: #221e22;
+
+@font-face {
+  src: url('../fonts/FantasqueSansMono-Regular.woff2');
+  font-family: "Fantasque Sans Mono";
+  font-style: normal;
+}
+@font-face {
+  src: url('../fonts/FantasqueSansMono-Italic.woff2');
+  font-family: "Fantasque Sans Mono";
+  font-style: italic;
+}
+@font-face {
+  src: url('../fonts/FantasqueSansMono-Bold.woff2');
+  font-family: "Fantasque Sans Mono";
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face {
+  src: url('../fonts/FantasqueSansMono-BoldItalic.woff2');
+  font-family: "Fantasque Sans Mono";
+  font-style: italic;
+  font-weight: bold;
+}
+$fonts: "Fantasque Sans Mono", Arial, Helvetica, sans-serif;
+
+$screen-sm-min: 576px;
+$screen-md-min: 768px;
+$screen-lg-min: 992px;
+$screen-xl-min: 1200px;
+
+@mixin sm {
+   @media (min-width: #{$screen-sm-min}) {
+       @content;
+   }
+}
+@mixin md {
+   @media (min-width: #{$screen-md-min}) {
+       @content;
+   }
+}
+@mixin lg {
+   @media (min-width: #{$screen-lg-min}) {
+       @content;
+   }
+}
+@mixin xl {
+   @media (min-width: #{$screen-xl-min}) {
+       @content;
+   }
+}
+
+@mixin font-weight($property) {
+    font-weight: $property;
+    /* font-variation-settings: 'wght' $property; */
+}

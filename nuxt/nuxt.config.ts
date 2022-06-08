@@ -7,5 +7,9 @@ export default defineNuxtConfig({
     projectId: 'zugazhip',
     apiVersion: '2022-03-25',
     dataset: 'production'
-  }
+  },
+
+  css: [
+    '~/assets/css/main.scss'
+  ]
 })
