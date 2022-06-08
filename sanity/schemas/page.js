@@ -12,6 +12,17 @@ export default {
       validation: Rule => Rule.required()
     },
     {
+      name: 'slug',
+      type: 'slug',
+      title: 'Slug',
+      options: {
+        source: 'title',
+        maxLength: 96,
+        slugify: input => input.toLowerCase().replace(/\s+/g, '-').slice(0, 96)
+      },
+      validation: Rule => Rule.required()
+    },  
+    {
       name: 'description',
       type: 'text',
       title: 'Description'
@@ -22,10 +33,10 @@ export default {
       title: 'SEO Image'
     },
     {
-          name: 'components',
-          type: 'array',
-          title: 'Components',
-          of: components.map((component) => (component))
-        }
+      name: 'components',
+      type: 'array',
+      title: 'Components',
+      of: components.map((component) => (component))
+    }
   ]
 }

@@ -12,7 +12,7 @@
 <script>
 export default {
   setup() {
-    const query = groq`*[_type == "page" && title == "Home"]`
+    const query = groq`*[_type == "page" && slug.current == "home"]`
     const { data } = useSanityQuery(query)
 
     return { data }
