@@ -136,3 +136,4 @@ pnp.*
 
 # Mac files
 .DS_Store
+sanity/config/.checksums
