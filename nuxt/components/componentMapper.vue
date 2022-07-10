@@ -1,7 +1,7 @@
 <template>
   <div>
     <component :is="data._type" v-bind="data" />
-    {{ data }}
+    <!-- {{ data }} -->
   </div>
 </template>
 
